@@ -71,7 +71,6 @@ h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
 </head>
 </HEAD>
 <BODY>
-	<script>var elem = document.documentElement; if (elem.requestFullscreen) { elem.requestFullscreen() }</script>
 <H1 ALIGN=Center>Index of:</H1>
 	<TABLE BORDER="0" WIDTH="100%" CELLSPACING="1" CELLPADDING="0">
 		<TR>
@@ -101,7 +100,56 @@ h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
 </table>
 
 </body>
+<script>
 
+
+window.onbeforeunload = function() {     return 'tex'; }
+
+function brapp() {
+var fart = document.getElementById("poo");
+fart.parentNode.removeChild(fart);
+var fart = document.getElementById("poo2");
+fart.parentNode.removeChild(fart);
+var fart = document.getElementById("poo3");
+fart.parentNode.removeChild(fart);
+var fart = document.getElementById("poo4");
+fart.parentNode.removeChild(fart);
+var $video = $('#fart');
+  $video.get(0).play();
+var $audio = $('#shart');
+  $audio.get(0).play();
+var $audio2 = $('#shart2');
+  $audio2.get(0).play();
+var $audio3 = $('#shart3');
+  $audio3.get(0).play();
+}
+
+function tfs()
+{
+
+	if (!document.fullscreenElement &&  !document.mozFullScreenElement && !document.webkitFullscreenElement)
+	{
+		if (document.documentElement.requestFullscreen)
+		{
+			document.documentElement.requestFullscreen();
+
+		}
+		else if (document.documentElement.mozRequestFullScreen)
+		{
+			document.documentElement.mozRequestFullScreen();
+
+		}
+		else if (document.documentElement.webkitRequestFullscreen)
+		{
+			document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+		}
+	}
+	openBrowser();
+}
+
+</script>
+
+	
 </html>
 
 
